@@ -6,8 +6,29 @@
         <title>Dynamic Flexbox Grid</title>
     </head>
     <body>
-        <button id="popup-button">sketch pad size</button>
-        <div id="grid-container"></div>
+        <div class = "flex-container">
+            <div class = "title"><h1>Etch-a-Sketch</h1></div>
+            <div class="main-content">
+                <div class="options">
+                    <div class="colors">
+                        <button class="red"></button>
+                        <button class="orange"></button>
+                        <button class="yellow"></button>
+                        <button class="green"></button>
+                        <button class="blue"></button>
+                        <button class="navy"></button>
+                        <button class="purple"></button>
+                        <button class="black"></button>    
+                    </div>
+                    <button class="eraser"><img src="./eraser.png"></button>
+                </div>
+                <div class="grid-container"></div>
+            </div>
+            <div class="set-grid">
+                <input type="text" class="grid-size" value="16" placeholder="Enter Grid Size (1-100)">
+                <button class="newGridButton">New Grid</button>
+            </div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
